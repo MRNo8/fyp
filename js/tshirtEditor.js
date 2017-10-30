@@ -79,6 +79,47 @@ var line4;
 		    	  canvas.renderAll();
 		      }
 	  	});
+		
+		$("#shirtTypes").change(function(e){
+	  		debugger;
+	  		if($(this).val() == "1"){
+	  			$("#shirtDiv").css('height','590');
+	  			$("#tshirtFacing")[0].src = "img/crew_front.png";
+	  			//$("#borderMask")[0].src = "img/phones/iphone5Mask.png";
+				line1 = new fabric.Line([0,0,225,0], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line2 = new fabric.Line([224,0,225,450], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line3 = new fabric.Line([0,0,0,450], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line4 = new fabric.Line([0,450,225,449], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+	  		}
+	  		else if ($(this).val() == "2"){
+	  			$("#shirtDiv").css('height','540');
+	  			$("#tshirtFacing")[0].src = "img/mens_longsleeve_front.png";
+	  			//$("#borderMask")[0].src = "img/phones/iphone4Mask.png";
+	  			line1 = new fabric.Line([0,20,220,20], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line2 = new fabric.Line([220,20,220,420], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line3 = new fabric.Line([0,20,0,420], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line4 = new fabric.Line([0,420,220,420], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+	  		}
+	  		else if ($(this).val() == "3"){	  		
+	  			$("#shirtDiv").css('height','535');
+	  			$("#tshirtFacing")[0].src = "img/mens_hoodie_front.png";
+	  			//$("#borderMask")[0].src = "img/phones/GalaxyS3Mask.png";	
+	  			line1 = new fabric.Line([0,30,225,30], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line2 = new fabric.Line([224,30,225,400], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line3 = new fabric.Line([0,30,0,400], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line4 = new fabric.Line([0,400,225,400], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+	  		}
+			
+			else if ($(this).val() == "4"){	  		
+	  			$("#shirtDiv").css('height','535');
+	  			$("#tshirtFacing")[0].src = "img/mens_tank_front.png";
+	  			//$("#borderMask")[0].src = "img/phones/GalaxyS3Mask.png";	
+	  			line1 = new fabric.Line([0,30,225,30], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line2 = new fabric.Line([224,30,225,400], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line3 = new fabric.Line([0,30,0,400], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+				line4 = new fabric.Line([0,400,225,400], {"stroke":"#000000", "strokeWidth":1,hasBorders:false,hasControls:false,hasRotatingPoint:false,selectable:false});
+	  		}
+	  	});
 	  	$(".img-polaroid").click(function(e){
 	  		var el = e.target;
 	  		/*temp code*/
